@@ -42,6 +42,8 @@ def next_word_function():
 
     word_profficiency_label.configure(text=prof_string)
 
+    word_sentence.configure(text="句子")
+
     global has_word
     has_word = True
 
@@ -103,6 +105,7 @@ def check_answer_function():
     global can_rightwrong
     if(has_word):
         word_text.configure(text=c_a.word_display[1])
+        word_sentence.configure(text=c_a.word_display[4])
 
         message_text.configure(text="Word Revealed. Did you get this right? No Cheating.")
 
@@ -284,6 +287,9 @@ word_definition_string = "Lorem ipsum dolor sit amet, consectetur adipiscing eli
 
 word_definition_text = ctk.CTkLabel(right_frame, text=word_definition_string, font=('Callibri', 25, 'bold'), pady = 50, wraplength=800)
 word_definition_text.pack(fill=tk.Y)
+
+word_sentence = ctk.CTkLabel(right_frame, text="句子", font=('Callibri', 25, 'bold'),  wraplength=800)
+word_sentence.pack(fill=tk.Y)
 
 message_text = ctk.CTkLabel(right_frame, text="Hello!", font=('Callibri', 15), pady=5)
 message_text.pack(side=ctk.BOTTOM, fill=ctk.X)
