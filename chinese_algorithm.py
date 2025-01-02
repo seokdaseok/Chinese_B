@@ -1,5 +1,3 @@
-import pandas as pd
-import numpy as np
 import random
 
 from openpyxl import load_workbook
@@ -95,8 +93,9 @@ def next_word(word_type, word_topic):
         the_pinyin = ws.cell(row=random_word_index, column=2).value
         the_definition = ws.cell(row=random_word_index, column=4).value
         the_prof = ws.cell(row=random_word_index, column=5).value
+        the_example = ws.cell(row=random_word_index, column=8).value
 
-        word_display = [the_pinyin, the_word, the_definition, the_prof]
+        word_display = [the_pinyin, the_word, the_definition, the_prof, the_example]
 
         ws.cell(row=random_word_index, column=6).value = ws.cell(row=random_word_index, column=6).value + 1
 
@@ -138,8 +137,9 @@ def next_word(word_type, word_topic):
             the_pinyin = ws.cell(row=random_word_index, column=2).value
             the_definition = ws.cell(row=random_word_index, column=4).value
             the_prof = ws.cell(row=random_word_index, column=5).value
+            the_example = ws.cell(row=random_word_index, column=8).value
 
-            word_display = [the_pinyin, the_word, the_definition, the_prof]
+            word_display = [the_pinyin, the_word, the_definition, the_prof, the_example]
 
             ws.cell(row=random_word_index, column=6).value = ws.cell(row=random_word_index, column=6).value + 1
 
@@ -186,8 +186,9 @@ def next_word(word_type, word_topic):
             the_pinyin = ws.cell(row=random_word_index, column=2).value
             the_definition = ws.cell(row=random_word_index, column=4).value
             the_prof = ws.cell(row=random_word_index, column=5).value
+            the_example = ws.cell(row=random_word_index, column=8).value
 
-            word_display = [the_pinyin, the_word, the_definition, the_prof]
+            word_display = [the_pinyin, the_word, the_definition, the_prof, the_example]
 
             ws.cell(row=random_word_index, column=6).value = ws.cell(row=random_word_index, column=6).value + 1
 
