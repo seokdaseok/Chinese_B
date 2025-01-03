@@ -2,9 +2,9 @@ import random
 
 from openpyxl import load_workbook
 
-normal_words_directory = "Words/normal_word_bank.xlsx"
+normal_words_directory = "Words/normal_words.xlsx"
 
-listening_directory = "Words/listening_word_bank.xlsx"
+listening_directory = "Words/listening_words.xlsx"
 
 the_current_word_index = 1
 word_display = ["Pin Yin", "詞語", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 0]
